@@ -211,7 +211,9 @@ tr:nth-of-type(2n){
     #title{
         font-size: 25px;
     }
+}
 
+@media (max-width:504px ){
     .table  tr{
         display: flex;
         flex-direction: column;
