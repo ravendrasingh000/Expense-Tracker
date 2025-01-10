@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="top-head">
+            <h1 id="title">Expense Tracker</h1>
+            <h2>Your Balance</h2>
+            <h2 id="your-balance"></h2>
+        </div>
+        <hr>
+
+        <div class="in-ex">
+            <div class="income">
+                <h2>Income</h2>
+                <h2 id="income-rupee"></h2>
+            </div>
+            <div class="expense">
+                <h2>Expense</h2>
+                <h2 id="expense-rupee"></h2>
+
+                
+            </div>
+        </div>
+        <hr>
+
+        <div class="history">
+            <h2>Transaction History</h2>
+        </div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Amount</th>
+                    <th>Transaction</th>
+                    <th>Date</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody class="t-list">
+               
+            </tbody>
+        </table>
+
+        <!-- add Transaction button -->
+        <div class="add-trans">
+            <button class="icon popup-btn">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </div>
+    </div> 
+     <!-- container close here -->
+
+
+    <!-- popup-form for add Transactions -->
+    <div class="popup-form">
+        <form class="tform">
+            <div id="close-btn">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <h2 id="addt">Add Transaction</h2>
+            <input  type="text" placeholder="Product" required>
+            <input  type="number" placeholder="Amount" required>
+            <select id="select" required>
+                <option hidden>Transaction</option>
+                <option>Credit</option>
+                <option>Debit</option>
+            </select>
+            <button type="submit" class="submit-btn">Submit</button>
+            <button type="button" class="update-btn">Update</button>
+        </form>
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>
