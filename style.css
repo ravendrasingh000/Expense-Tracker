@@ -213,7 +213,7 @@ tr:nth-of-type(2n){
     }
 }
 
-@media (max-width: 240px){
+@media (min-width: 250px){
     #title{
         font-size: 22px;
     }
