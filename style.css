@@ -213,6 +213,12 @@ tr:nth-of-type(2n){
     }
 }
 
+@media (max-width: 268px){
+    #title{
+        font-size: 22px;
+    }
+}
+
 @media (max-width:504px ){
     .table  tr{
         display: flex;
